@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive# Install Utils
 WORKDIR /tmp
 RUN \
 apt-get update && \
-apt-get install -y curl make rlwrap wget xz-utils
+apt-get install -y git curl make rlwrap wget xz-utils
 
 # Install JAVA
 ENV JAVA_VERSION=17
