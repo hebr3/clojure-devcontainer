@@ -34,3 +34,8 @@ cp -r node-v$NODE_VERSION-linux-x64/include /usr/ && \
 cp -r node-v$NODE_VERSION-linux-x64/lib /usr/ && \
 cp -r node-v$NODE_VERSION-linux-x64/share /usr/ && \
 rm -rf node-v$NODE_VERSION-linux-x64
+
+# Install Babashka
+RUN wget https://raw.githubusercontent.com/babashka/babashka/master/install && \
+bash install
+
